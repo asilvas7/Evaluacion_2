@@ -8,7 +8,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #fafafa;
+    background-color: #cae5ff;
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
 }
 
 .header h1 {
-    font-size: 2.5rem;
+    font-size: 5rem;
     font-weight: 300;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -42,11 +42,13 @@ body {
 .nav {
     text-align: center;
     padding: 30px 0;
+    background-color: #028090
+
 }
 
 .nav a {
     text-decoration: none;
-    color: #666;
+    color: #fff;
     margin: 0 25px;
     font-size: 0.95rem;
     letter-spacing: 1px;
@@ -56,7 +58,7 @@ body {
 
 .nav a:hover,
 .nav a.active {
-    color: #2c2c2c;
+    color: #e4d6a7;
 }
 
 /* Gallery Grid */
@@ -76,11 +78,12 @@ body {
     overflow: hidden;
     background-color: #f0f0f0;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadido box-shadow para el efecto de resplandor */
 }
 
 .gallery-item:hover {
-    transform: scale(1.01);
+    transform: scale(1.05); /* Aumentamos ligeramente el tamaño */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Añadido un efecto de sombra */
     z-index: 1;
 }
 
@@ -92,17 +95,16 @@ body {
 }
 
 .gallery-item:hover img {
-    opacity: 0.9;
+    opacity: 0.8; /* Menos opacidad al hacer hover */
 }
 
-/* Overlay for project info */
 .gallery-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(44, 44, 44, 0.8);
+    background: rgba(44, 44, 44, 0.8); /* Un poco más suave para el fondo */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,14 +123,15 @@ body {
     font-weight: 400;
     margin-bottom: 5px;
     letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Agregado sombra al texto */
 }
 
 .gallery-overlay p {
     color: #ccc;
     font-size: 0.9rem;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para que el texto se vea más legible */
 }
-
 /* Footer */
 .footer {
     text-align: center;
@@ -147,7 +150,7 @@ body {
 }
 
 .social-links a {
-    color: #666;
+    color: #6e0e0a;
     text-decoration: none;
     margin: 0 15px;
     font-size: 0.9rem;
@@ -155,7 +158,7 @@ body {
 }
 
 .social-links a:hover {
-    color: #2c2c2c;
+    color: #6e0e0a;
 }
 
 /* Mobile Responsive */
